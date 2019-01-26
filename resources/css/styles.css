@@ -35,6 +35,17 @@ main {
         margin: 1rem auto;
         font-size: 1.3rem;
         color: gray; }
+  @media only screen and (max-width: 320px) {
+    main section.content .carousel div.waktu-solat h2 {
+      font-size: 1rem;
+      line-height: 1.1rem; }
+    main section.content .carousel div.waktu-solat p {
+      font-size: .8rem;
+      line-height: .9rem; }
+    main section.content .carousel div.waktu-solat button {
+      font-size: 1rem;
+      line-height: 1rem;
+      height: 2rem; } }
 
 footer p {
   color: grey; }
