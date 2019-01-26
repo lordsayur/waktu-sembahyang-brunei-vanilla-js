@@ -5,12 +5,12 @@ $(document).ready(function () {
     let month = months[date.getMonth()];
     let year = date.getFullYear();
 
-    let subuh = waktu[day - 1].Subuh;
-    let syuruk = waktu[day - 1].Syuruk;
-    let zuhur = waktu[day - 1].Zuhur;
-    let asar = waktu[day - 1].Asar;
-    let maghrib = waktu[day - 1].Maghrib;
-    let isya = waktu[day - 1].Isya;
+    let subuh = parseFloat(waktu[day - 1].Subuh);
+    let syuruk = parseFloat(waktu[day - 1].Syuruk);
+    let zuhur = parseFloat(waktu[day - 1].Zuhur);
+    let asar = parseFloat(waktu[day - 1].Asar);
+    let maghrib = parseFloat(waktu[day - 1].Maghrib);
+    let isya = parseFloat(waktu[day - 1].Isya);
 
     let subuh1 = waktu[day].Subuh;
     let zuhur1 = waktu[day].Zuhur;
