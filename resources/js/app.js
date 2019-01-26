@@ -40,6 +40,9 @@ $(document).ready(function () {
 
     function highlight() {
         let currentTime = date.getHours() + date.getMinutes() / 100;
+        console.log(syuruk);
+        console.log(currentTime);
+        console.log
         if (subuh > currentTime) {
             $('#isya').addClass("active pulse green white-text");
             $('#maghrib').removeClass("active pulse green white-text");
@@ -50,14 +53,14 @@ $(document).ready(function () {
             $('#isya').removeClass("active pulse green white-text");
             console.log("Subuh!!!");
         }
-        else if (zuhur + 12.0 >= currentTime) {
+        else if (zuhur >= currentTime) {
             $('#zuhur').addClass("active pulse orange white-text");
             $('#subuh').removeClass("active pulse green white-text");
             console.log("Kn Zuhur!!!");
         }
         else if (asar + 12.0 >= currentTime) {
             $('#zuhur').addClass("active pulse green white-text");
-            $('#zuhur').removeClass("active pulse orange white-text");
+            $('#zuhur').removeClass("orange");
             console.log("Zuhur!!!");
         }
         else if (maghrib + 12.0 >= currentTime) {
