@@ -18,6 +18,12 @@ $(document).ready(function () {
     let maghrib1 = waktu[day].Maghrib;
     let isya1 = waktu[day].Isya;
 
+    let subuh2 = waktu[day + 1].Subuh;
+    let zuhur2 = waktu[day + 1].Zuhur;
+    let asar2 = waktu[day + 1].Asar;
+    let maghrib2 = waktu[day + 1].Maghrib;
+    let isya2 = waktu[day + 1].Isya;
+
     highlight();
     setInterval(function(){ highlight(); }, 30000);
 
@@ -39,44 +45,50 @@ $(document).ready(function () {
     $('#maghrib1').text("maghrib : " + maghrib1 + " pm");
     $('#isya1').text("isya : " + isya1 + " pm");
 
+    $('#date2').text(waktu[day + 1].Tarikh);
+    $('#subuh2').text("subuh : " + subuh2 + " am");
+    $('#zuhur2').text("zuhur : " + zuhur2 + " pm");
+    $('#asar2').text("asar : " + asar2 + " pm");
+    $('#maghrib2').text("maghrib : " + maghrib2 + " pm");
+    $('#isya2').text("isya : " + isya2 + " pm");
+
     function highlight() {
         let currentTime = date.getHours() + date.getMinutes() / 100;
-        console.log(syuruk);
-        console.log(currentTime);
-        console.log
+        let activeClass = "active pulse green accent-4 white-text";
+
         if (subuh > currentTime) {
-            $('#isya').addClass("active pulse green white-text");
-            $('#maghrib').removeClass("active pulse green white-text");
+            $('#isya').addClass(activeClass);
+            $('#maghrib').removeClass(activeClass);
             console.log("Isya!!!");
         }
         else if (syuruk >= currentTime) {
-            $('#subuh').addClass("active pulse green white-text");
-            $('#isya').removeClass("active pulse green white-text");
+            $('#subuh').addClass(activeClass);
+            $('#isya').removeClass(activeClass);
             console.log("Subuh!!!");
         }
         else if (zuhur >= currentTime) {
             $('#zuhur').addClass("active pulse orange white-text");
-            $('#subuh').removeClass("active pulse green white-text");
+            $('#subuh').removeClass(activeClass);
             console.log("Kn Zuhur!!!");
         }
         else if (asar + 12.0 >= currentTime) {
-            $('#zuhur').addClass("active pulse green white-text");
+            $('#zuhur').addClass(activeClass);
             $('#zuhur').removeClass("orange");
             console.log("Zuhur!!!");
         }
         else if (maghrib + 12.0 >= currentTime) {
-            $('#asar').addClass("active pulse green white-text");
-            $('#zuhur').removeClass("active pulse green white-text");
+            $('#asar').addClass(activeClass);
+            $('#zuhur').removeClass(activeClass);
             console.log("Asar!!!");
         }
         else if (isya + 12.0 >= currentTime) {
-            $('#maghrib').addClass("active pulse green white-text");
-            $('#asar').removeClass("active pulse green white-text");
+            $('#maghrib').addClass(activeClass);
+            $('#asar').removeClass(activeClass);
             console.log("Maghrib!!!");
         }
         else if (12.0 + 12.0 >= currentTime) {
-            $('#isya').addClass("active pulse green white-text");
-            $('#maghrib').removeClass("active pulse green white-text");
+            $('#isya').addClass(activeClass);
+            $('#maghrib').removeClass(activeClass);
             console.log("Isya!!!");
         }
         else
