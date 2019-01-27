@@ -5,12 +5,12 @@ $(document).ready(function () {
     let month = months[date.getMonth()];
     let year = date.getFullYear();
 
-    let subuh = parseFloat(waktu[day - 1].Subuh);
-    let syuruk = parseFloat(waktu[day - 1].Syuruk);
-    let zuhur = parseFloat(waktu[day - 1].Zuhur);
-    let asar = parseFloat(waktu[day - 1].Asar);
-    let maghrib = parseFloat(waktu[day - 1].Maghrib);
-    let isya = parseFloat(waktu[day - 1].Isya);
+    let subuh = waktu[day - 1].Subuh;
+    let syuruk = waktu[day - 1].Syuruk;
+    let zuhur = waktu[day - 1].Zuhur;
+    let asar = waktu[day - 1].Asar;
+    let maghrib = waktu[day - 1].Maghrib;
+    let isya = waktu[day - 1].Isya;
 
     let subuh1 = waktu[day].Subuh;
     let zuhur1 = waktu[day].Zuhur;
@@ -56,32 +56,32 @@ $(document).ready(function () {
         let currentTime = date.getHours() + date.getMinutes() / 100;
         let activeClass = "active pulse green accent-4 white-text";
 
-        if (subuh > currentTime) {
+        if (parseFloat(subuh) > currentTime) {
             $('#isya').addClass(activeClass);
             $('#maghrib').removeClass(activeClass);
             console.log("Isya!!!");
         }
-        else if (syuruk >= currentTime) {
+        else if (parseFloat(syuruk) >= currentTime) {
             $('#subuh').addClass(activeClass);
             $('#isya').removeClass(activeClass);
             console.log("Subuh!!!");
         }
-        else if (zuhur >= currentTime) {
+        else if (parseFloat(zuhur) >= currentTime) {
             $('#zuhur').addClass("active pulse orange white-text");
             $('#subuh').removeClass(activeClass);
             console.log("Kn Zuhur!!!");
         }
-        else if (asar + 12.0 >= currentTime) {
+        else if (parseFloat(asar) + 12.0 >= currentTime) {
             $('#zuhur').addClass(activeClass);
             $('#zuhur').removeClass("orange");
             console.log("Zuhur!!!");
         }
-        else if (maghrib + 12.0 >= currentTime) {
+        else if (parseFloat(maghrib) + 12.0 >= currentTime) {
             $('#asar').addClass(activeClass);
             $('#zuhur').removeClass(activeClass);
             console.log("Asar!!!");
         }
-        else if (isya + 12.0 >= currentTime) {
+        else if (parseFloat(isya) + 12.0 >= currentTime) {
             $('#maghrib').addClass(activeClass);
             $('#asar').removeClass(activeClass);
             console.log("Maghrib!!!");
