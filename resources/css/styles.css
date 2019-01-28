@@ -8,25 +8,23 @@ main {
   main section.content {
     height: 100%; }
     main section.content .carousel {
-      margin: 5vh auto;
+      margin: 2vh auto;
       border-radius: .5rem;
-      height: 80vh;
-      width: 50vh; }
-      main section.content .carousel div.waktu-solat h2 {
-        width: 75%;
-        margin: auto;
-        padding: 1rem 0;
-        text-transform: uppercase;
-        font-size: 1.3rem; }
+      width: 90%;
+      height: 90%;
+      max-width: 35rem;
+      max-height: 35rem; }
       main section.content .carousel div.waktu-solat p {
         width: 75%;
-        margin: auto;
+        margin: 1rem auto;
         padding: 0;
         text-transform: uppercase;
         font-size: 1.2rem;
-        color: white; }
+        color: white;
+        font-weight: bold; }
       main section.content .carousel div.waktu-solat button {
-        width: 80%;
+        width: 90%;
+        max-width: 25rem;
         display: block;
         border-radius: .5rem;
         background-color: #fff;
@@ -36,18 +34,17 @@ main {
         font-size: 1.3rem;
         color: gray; }
   @media only screen and (max-width: 320px) {
-    main section.content .carousel div.waktu-solat h2 {
-      font-size: 1rem;
-      line-height: 1.1rem; }
     main section.content .carousel div.waktu-solat p {
       font-size: .8rem;
       line-height: .9rem; }
     main section.content .carousel div.waktu-solat button {
-      font-size: 1rem;
-      line-height: 1rem;
-      height: 2rem; } }
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      height: 2.5rem; } }
 
-footer p {
-  color: grey; }
+#version {
+  position: fixed;
+  bottom: 0px;
+  left: 1px; }
 
 /*# sourceMappingURL=styles.css.map */

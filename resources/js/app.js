@@ -2,27 +2,28 @@ $(document).ready(function () {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var date = new Date();
     let day = date.getDate();
-    let month = months[date.getMonth()];
+    let monthNum = date.getMonth();
+    let month = months[monthNum];
     let year = date.getFullYear();
 
-    let subuh = waktu[day - 1].Subuh;
-    let syuruk = waktu[day - 1].Syuruk;
-    let zuhur = waktu[day - 1].Zuhur;
-    let asar = waktu[day - 1].Asar;
-    let maghrib = waktu[day - 1].Maghrib;
-    let isya = waktu[day - 1].Isya;
+    let subuh = waktu[monthNum][day - 1].Subuh;
+    let syuruk = waktu[monthNum][day - 1].Syuruk;
+    let zuhur = waktu[monthNum][day - 1].Zuhur;
+    let asar = waktu[monthNum][day - 1].Asar;
+    let maghrib = waktu[monthNum][day - 1].Maghrib;
+    let isya = waktu[monthNum][day - 1].Isya;
 
-    let subuh1 = waktu[day].Subuh;
-    let zuhur1 = waktu[day].Zuhur;
-    let asar1 = waktu[day].Asar;
-    let maghrib1 = waktu[day].Maghrib;
-    let isya1 = waktu[day].Isya;
+    let subuh1 = waktu[monthNum][day].Subuh;
+    let zuhur1 = waktu[monthNum][day].Zuhur;
+    let asar1 = waktu[monthNum][day].Asar;
+    let maghrib1 = waktu[monthNum][day].Maghrib;
+    let isya1 = waktu[monthNum][day].Isya;
 
-    let subuh2 = waktu[day + 1].Subuh;
-    let zuhur2 = waktu[day + 1].Zuhur;
-    let asar2 = waktu[day + 1].Asar;
-    let maghrib2 = waktu[day + 1].Maghrib;
-    let isya2 = waktu[day + 1].Isya;
+    let subuh2 = waktu[monthNum][day + 1].Subuh;
+    let zuhur2 = waktu[monthNum][day + 1].Zuhur;
+    let asar2 = waktu[monthNum][day + 1].Asar;
+    let maghrib2 = waktu[monthNum][day + 1].Maghrib;
+    let isya2 = waktu[monthNum][day + 1].Isya;
 
     highlight();
     setInterval(function(){ highlight(); }, 1000);
@@ -31,21 +32,24 @@ $(document).ready(function () {
         fullWidth: true,
         indicators: true
     });
-    $('#date').text(waktu[day - 1].Tarikh);
+    $('#date-m').text(day + " " + month + " " + year);
+    $('#date-h').text(waktu[monthNum][day - 1].Tarikh);
     $('#subuh').text("subuh : " + subuh + " am");
     $('#zuhur').text("zuhur : " + zuhur + " pm");
     $('#asar').text("asar : " + asar + " pm");
     $('#maghrib').text("maghrib : " + maghrib + " pm");
     $('#isya').text("isya : " + isya + " pm");
 
-    $('#date1').text(waktu[day].Tarikh);
+    $('#date1-m').text(day + 1 + " " + month + " " + year);
+    $('#date1-h').text(waktu[monthNum][day].Tarikh);
     $('#subuh1').text("subuh : " + subuh1 + " am");
     $('#zuhur1').text("zuhur : " + zuhur1 + " pm");
     $('#asar1').text("asar : " + asar1 + " pm");
     $('#maghrib1').text("maghrib : " + maghrib1 + " pm");
     $('#isya1').text("isya : " + isya1 + " pm");
 
-    $('#date2').text(waktu[day + 1].Tarikh);
+    $('#date2-m').text(day + 2 + " " + month + " " + year);
+    $('#date2-h').text(waktu[monthNum][day + 1].Tarikh);
     $('#subuh2').text("subuh : " + subuh2 + " am");
     $('#zuhur2').text("zuhur : " + zuhur2 + " pm");
     $('#asar2').text("asar : " + asar2 + " pm");
