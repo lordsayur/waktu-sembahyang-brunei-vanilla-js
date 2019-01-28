@@ -61,32 +61,32 @@ $(document).ready(function () {
             $('#maghrib').removeClass(activeClass);
             console.log("Isya!!!");
         }
-        else if (parseFloat(syuruk) >= currentTime) {
+        else if (parseFloat(syuruk) > currentTime) {
             $('#subuh').addClass(activeClass);
             $('#isya').removeClass(activeClass);
             console.log("Subuh!!!");
         }
-        else if (parseFloat(zuhur) >= currentTime) {
+        else if (parseFloat(zuhur) > currentTime) {
             $('#zuhur').addClass("active pulse orange white-text");
             $('#subuh').removeClass(activeClass);
             console.log("Kn Zuhur!!!");
         }
-        else if (parseFloat(asar) + 12.0 >= currentTime) {
+        else if (parseFloat(asar) + 12.0 > currentTime) {
             $('#zuhur').addClass(activeClass);
             $('#zuhur').removeClass("orange");
             console.log("Zuhur!!!");
         }
-        else if (parseFloat(maghrib) + 12.0 >= currentTime) {
+        else if (parseFloat(maghrib) + 12.0 > currentTime) {
             $('#asar').addClass(activeClass);
             $('#zuhur').removeClass(activeClass);
             console.log("Asar!!!");
         }
-        else if (parseFloat(isya) + 12.0 >= currentTime) {
+        else if (parseFloat(isya) + 12.0 > currentTime) {
             $('#maghrib').addClass(activeClass);
             $('#asar').removeClass(activeClass);
             console.log("Maghrib!!!");
         }
-        else if (12.0 + 12.0 >= currentTime) {
+        else if (12.0 + 12.0 > currentTime) {
             $('#isya').addClass(activeClass);
             $('#maghrib').removeClass(activeClass);
             console.log("Isya!!!");
