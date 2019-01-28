@@ -25,7 +25,7 @@ $(document).ready(function () {
     let isya2 = waktu[day + 1].Isya;
 
     highlight();
-    setInterval(function(){ highlight(); }, 30000);
+    setInterval(function(){ highlight(); }, 1000);
 
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
