@@ -22,33 +22,49 @@ $(document).ready(function () {
     let isya1, isya2;
     
     if(typeof waktu[monthNum][day] === 'undefined') {
+        date1_m = 1 + " " + months[monthNum + 1] + " " + year;
+        date1_h = waktu[monthNum + 1][0].Tarikh;
+        subuh1 = waktu[monthNum + 1][0].Subuh;
+        zuhur1 = waktu[monthNum + 1][0].Zuhur;
+        asar1 = waktu[monthNum + 1][0].Asar;
+        maghrib1 = waktu[monthNum + 1][0].Maghrib;
+        isya1 = waktu[monthNum + 1][0].Isya;
 
+        date2_m = 2 + " " + months[monthNum + 1] + " " + year;
+        date2_h = waktu[monthNum + 1][1].Tarikh;
+        subuh2 = waktu[monthNum + 1][1].Subuh;
+        zuhur2 = waktu[monthNum + 1][1].Zuhur;
+        asar2 = waktu[monthNum + 1][1].Asar;
+        maghrib2 = waktu[monthNum + 1][1].Maghrib;
+        isya2 = waktu[monthNum + 1][1].Isya;
     }
     else {
+        date1_m = day + 1 + " " + month + " " + year;
+        date1_h = waktu[monthNum][day].Tarikh;
         subuh1 = waktu[monthNum][day].Subuh;
         zuhur1 = waktu[monthNum][day].Zuhur;
         asar1 = waktu[monthNum][day].Asar;
         maghrib1 = waktu[monthNum][day].Maghrib;
         isya1 = waktu[monthNum][day].Isya;
-    }
 
-    if(typeof waktu[monthNum][day + 1] === 'undefined') {
-        date2_m = 1 + " " + months[monthNum + 1] + " " + year;
-        date2_h = waktu[monthNum + 1][0].Tarikh;
-        subuh2 = waktu[monthNum + 1][0].Subuh;
-        zuhur2 = waktu[monthNum + 1][0].Zuhur;
-        asar2 = waktu[monthNum + 1][0].Asar;
-        maghrib2 = waktu[monthNum + 1][0].Maghrib;
-        isya2 = waktu[monthNum + 1][0].Isya;
-    }
-    else {
-        date2_m = day + 2 + " " + month + " " + year;
-        date2_h = waktu[monthNum][day + 1].Tarikh;
-        subuh2 = waktu[monthNum + 1][day + 1].Subuh;
-        zuhur2 = waktu[monthNum][day + 1].Zuhur;
-        asar2 = waktu[monthNum][day + 1].Asar;
-        maghrib2 = waktu[monthNum][day + 1].Maghrib;
-        isya2 = waktu[monthNum][day + 1].Isya;
+        if(typeof waktu[monthNum][day + 1] === 'undefined') {
+            date2_m = 1 + " " + months[monthNum + 1] + " " + year;
+            date2_h = waktu[monthNum + 1][0].Tarikh;
+            subuh2 = waktu[monthNum + 1][0].Subuh;
+            zuhur2 = waktu[monthNum + 1][0].Zuhur;
+            asar2 = waktu[monthNum + 1][0].Asar;
+            maghrib2 = waktu[monthNum + 1][0].Maghrib;
+            isya2 = waktu[monthNum + 1][0].Isya;
+        }
+        else {
+            date2_m = day + 2 + " " + month + " " + year;
+            date2_h = waktu[monthNum][day + 1].Tarikh;
+            subuh2 = waktu[monthNum + 1][day + 1].Subuh;
+            zuhur2 = waktu[monthNum][day + 1].Zuhur;
+            asar2 = waktu[monthNum][day + 1].Asar;
+            maghrib2 = waktu[monthNum][day + 1].Maghrib;
+            isya2 = waktu[monthNum][day + 1].Isya;
+        }
     }
 
     highlight();
@@ -66,8 +82,8 @@ $(document).ready(function () {
     $('#maghrib').text("maghrib : " + maghrib + " pm");
     $('#isya').text("isya : " + isya + " pm");
 
-    $('#date1-m').text(day + 1 + " " + month + " " + year);
-    $('#date1-h').text(waktu[monthNum][day].Tarikh);
+    $('#date1-m').text(date1_m);
+    $('#date1-h').text(date1_h);
     $('#subuh1').text("subuh : " + subuh1 + " am");
     $('#zuhur1').text("zuhur : " + zuhur1 + " pm");
     $('#asar1').text("asar : " + asar1 + " pm");
