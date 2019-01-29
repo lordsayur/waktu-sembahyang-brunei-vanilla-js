@@ -13,17 +13,43 @@ $(document).ready(function () {
     let maghrib = waktu[monthNum][day - 1].Maghrib;
     let isya = waktu[monthNum][day - 1].Isya;
 
-    let subuh1 = waktu[monthNum][day].Subuh;
-    let zuhur1 = waktu[monthNum][day].Zuhur;
-    let asar1 = waktu[monthNum][day].Asar;
-    let maghrib1 = waktu[monthNum][day].Maghrib;
-    let isya1 = waktu[monthNum][day].Isya;
+    let date1_m, date2_m;
+    let date1_h, date2_h;
+    let subuh1, subuh2;
+    let zuhur1, zuhur2;
+    let asar1, asar2;
+    let maghrib1, maghrib2;
+    let isya1, isya2;
+    
+    if(typeof waktu[monthNum][day] === 'undefined') {
 
-    let subuh2 = waktu[monthNum][day + 1].Subuh;
-    let zuhur2 = waktu[monthNum][day + 1].Zuhur;
-    let asar2 = waktu[monthNum][day + 1].Asar;
-    let maghrib2 = waktu[monthNum][day + 1].Maghrib;
-    let isya2 = waktu[monthNum][day + 1].Isya;
+    }
+    else {
+        subuh1 = waktu[monthNum][day].Subuh;
+        zuhur1 = waktu[monthNum][day].Zuhur;
+        asar1 = waktu[monthNum][day].Asar;
+        maghrib1 = waktu[monthNum][day].Maghrib;
+        isya1 = waktu[monthNum][day].Isya;
+    }
+
+    if(typeof waktu[monthNum][day + 1] === 'undefined') {
+        date2_m = 1 + " " + months[monthNum + 1] + " " + year;
+        date2_h = waktu[monthNum + 1][0].Tarikh;
+        subuh2 = waktu[monthNum + 1][0].Subuh;
+        zuhur2 = waktu[monthNum + 1][0].Zuhur;
+        asar2 = waktu[monthNum + 1][0].Asar;
+        maghrib2 = waktu[monthNum + 1][0].Maghrib;
+        isya2 = waktu[monthNum + 1][0].Isya;
+    }
+    else {
+        date2_m = day + 2 + " " + month + " " + year;
+        date2_h = waktu[monthNum][day + 1].Tarikh;
+        subuh2 = waktu[monthNum + 1][day + 1].Subuh;
+        zuhur2 = waktu[monthNum][day + 1].Zuhur;
+        asar2 = waktu[monthNum][day + 1].Asar;
+        maghrib2 = waktu[monthNum][day + 1].Maghrib;
+        isya2 = waktu[monthNum][day + 1].Isya;
+    }
 
     highlight();
     setInterval(function(){ highlight(); }, 1000);
@@ -48,8 +74,8 @@ $(document).ready(function () {
     $('#maghrib1').text("maghrib : " + maghrib1 + " pm");
     $('#isya1').text("isya : " + isya1 + " pm");
 
-    $('#date2-m').text(day + 2 + " " + month + " " + year);
-    $('#date2-h').text(waktu[monthNum][day + 1].Tarikh);
+    $('#date2-m').text(date2_m);
+    $('#date2-h').text(date2_h);
     $('#subuh2').text("subuh : " + subuh2 + " am");
     $('#zuhur2').text("zuhur : " + zuhur2 + " pm");
     $('#asar2').text("asar : " + asar2 + " pm");
