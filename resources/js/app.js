@@ -59,7 +59,7 @@ $(document).ready(function () {
         else {
             date2_m = day + 2 + " " + month + " " + year;
             date2_h = waktu[monthNum][day + 1].Tarikh;
-            subuh2 = waktu[monthNum + 1][day + 1].Subuh;
+            subuh2 = waktu[monthNum][day + 1].Subuh;
             zuhur2 = waktu[monthNum][day + 1].Zuhur;
             asar2 = waktu[monthNum][day + 1].Asar;
             maghrib2 = waktu[monthNum][day + 1].Maghrib;
