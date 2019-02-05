@@ -1,5 +1,6 @@
 $(document).ready(function () {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad"];
     var date = new Date();
     let day = date.getDate();
     let monthNum = date.getMonth();
@@ -15,6 +16,7 @@ $(document).ready(function () {
 
     let date1_m, date2_m;
     let date1_h, date2_h;
+    let dayName1, dayName2;
     let subuh1, subuh2;
     let zuhur1, zuhur2;
     let asar1, asar2;
@@ -67,6 +69,22 @@ $(document).ready(function () {
         }
     }
 
+    if (date.getDay() - 1 < 5 ) {
+        dayName1 = days[date.getDay()];
+        dayName2 = days[date.getDay() + 1];
+    } else if (date.getDay() - 1 == 5) {
+        dayName1 = days[date.getDay()];
+        dayName2 = days[0];
+    }
+    else if (date.getDay() - 1 === 6) {
+        dayName1 = days[0];
+        dayName2 = days[1];
+    }
+    else {
+        dayName1 = 'hmmmm';
+        dayName2 = 'hmmmm';
+    }
+
     highlight();
     setInterval(function(){ highlight(); }, 1000);
 
@@ -76,27 +94,32 @@ $(document).ready(function () {
     });
     $('#date-m').text(day + " " + month + " " + year);
     $('#date-h').text(waktu[monthNum][day - 1].Tarikh);
-    $('#subuh').text("subuh : " + subuh + " am");
-    $('#zuhur').text("zuhur : " + zuhur + " pm");
-    $('#asar').text("asar : " + asar + " pm");
-    $('#maghrib').text("maghrib : " + maghrib + " pm");
-    $('#isya').text("isya : " + isya + " pm");
+    $('#hari').text(days[date.getDay() - 1]);
+    $('#subuh').text(subuh + " am");
+    $('#zuhur').text(zuhur + " pm");
+    $('#asar').text(asar + " pm");
+    $('#maghrib').text(maghrib + " pm");
+    $('#isya').text(isya + " pm");
 
     $('#date1-m').text(date1_m);
     $('#date1-h').text(date1_h);
-    $('#subuh1').text("subuh : " + subuh1 + " am");
-    $('#zuhur1').text("zuhur : " + zuhur1 + " pm");
-    $('#asar1').text("asar : " + asar1 + " pm");
-    $('#maghrib1').text("maghrib : " + maghrib1 + " pm");
-    $('#isya1').text("isya : " + isya1 + " pm");
+    $('#hari1').text(dayName1);
+    $('#subuh1').text(subuh1 + " am");
+    $('#zuhur1').text(zuhur1 + " pm");
+    $('#asar1').text(asar1 + " pm");
+    $('#maghrib1').text(maghrib1 + " pm");
+    $('#isya1').text(isya1 + " pm");
 
     $('#date2-m').text(date2_m);
     $('#date2-h').text(date2_h);
-    $('#subuh2').text("subuh : " + subuh2 + " am");
-    $('#zuhur2').text("zuhur : " + zuhur2 + " pm");
-    $('#asar2').text("asar : " + asar2 + " pm");
-    $('#maghrib2').text("maghrib : " + maghrib2 + " pm");
-    $('#isya2').text("isya : " + isya2 + " pm");
+    $('#hari2').text(dayName2);
+    $('#subuh2').text(subuh2 + " am");
+    $('#zuhur2').text(zuhur2 + " pm");
+    $('#asar2').text(asar2 + " pm");
+    $('#maghrib2').text(maghrib2 + " pm");
+    $('#isya2').text(isya2 + " pm");
+
+    // $('.collapsible').collapsible();
 
     function highlight() {
         let currentTime = date.getHours() + date.getMinutes() / 100;
@@ -120,6 +143,7 @@ $(document).ready(function () {
         else if (parseFloat(asar) + 12.0 > currentTime) {
             $('#zuhur').addClass(activeClass);
             $('#zuhur').removeClass("orange");
+            // $('#zuhur').closest("li").addClass("active");
             console.log("Zuhur!!!");
         }
         else if (parseFloat(maghrib) + 12.0 > currentTime) {

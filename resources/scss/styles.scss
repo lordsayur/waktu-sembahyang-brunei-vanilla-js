@@ -2,44 +2,113 @@ html, body {
     height: 100%;
     width: 100%;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 main {
     height: 100%;
-    section.content {
+    width: 100%;
+    .carousel {
+        margin: 0;
+        width: 100%;
         height: 100%;
-        .carousel {
-            margin: 2vh auto;
-            border-radius: .5rem;
-            width: 90%;
-            height: 90%;
-            max-width: 35rem;
-            max-height: 35rem;
-            div.waktu-solat {
-                p {
-                    width: 75%;
-                    margin: 1rem auto;
-                    padding: 0;
-                    text-transform: uppercase;
-                    font-size: 1.2rem;
-                    color: white;
-                    font-weight: bold;
+        h1{
+            font-size: 2rem;
+            padding: 0;
+            margin: .5rem auto;
+            color: white;
+            width: 12rem;
+            text-transform: uppercase;
+        }
+        p.date {
+            color: black;
+            text-align: center;
+            margin: .5rem auto;
+            padding: 0;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        .waktu-solat {
+            table {
+                margin: 0 auto;
+                padding: 0;
+                width: auto;
+            }
+            tr {
+                border: none;
+            }
+            td {
+                color: black;
+                font-weight: 600;
+                font-size: 1.3rem;
+                margin: .5rem auto;
+                padding-top: 0;
+                padding-bottom: 0;
+                &.center {
+                    width: 2rem;
                 }
-                button {
-                    width: 90%;
-                    max-width: 25rem;
-                    display: block;
-                    border-radius: .5rem;
-                    background-color: #fff;
-                    box-shadow: none;
-                    height: 3rem;
-                    margin: 1rem auto;
-                    font-size: 1.3rem;
-                    color: gray;
+                &:nth-of-type(1) {
+                    text-align: right;
+                }
+                &:nth-of-type(2) {
+                    width: 2rem;
+                    text-align: center;
+                }
+                &:nth-of-type(3) {
+                    text-align: left;
                 }
             }
         }
+        .table{ 
+            display: table; 
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            border: none !important;
+            box-shadow: none;
+            
+        }
+        .tr{ 
+            display: table-row;
+            .collapsible-header, .collapsible-body {
+                border: none;
+                padding: 0;
+                margin: .5rem 0;
+            }
+        }
+        .td{ 
+            display: table-cell;
+            margin: 0 auto;
+            padding: 0 1rem;
+            p {
+                margin: 0 auto;
+                color: black;
+                font-size: 1.3rem !important;
+                &.test {
+                    margin-left: 0;
+                    padding-left: .5rem;
+                    width: 7rem;
+                }
+            }
+            &:nth-of-type(1) {
+                text-align: right;
+                width: 46.5%;
+            }
+            &:nth-of-type(2) {
+                width: 1%;
+                text-align: center;
+            }
+            &:nth-of-type(3) {
+                width: 46.5%;
+                text-align: left;
+            }
+        }
+        .content {
+            color: grey;
+        }
     }
+    
     @media only screen and (max-width: 320px) {
         section.content {
             .carousel {
@@ -62,4 +131,5 @@ main {
     position: fixed;
     bottom: 0px;
     left: 1px;
+    font-size: .5rem;
 }
