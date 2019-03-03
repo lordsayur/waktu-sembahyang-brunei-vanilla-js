@@ -1,5 +1,5 @@
 $prayerTimeMar: 0.3rem;
-$prayerTimePad: 0.3rem;
+$prayerTimePad: 0.5rem;
 $prayerTimeFS: 1.3rem;
 
 html, body {
@@ -21,7 +21,8 @@ main {
             padding: 0;
             margin: .5rem auto;
             color: white;
-            width: 12rem;
+            width: 8rem;
+            border-radius: 2rem;
             text-transform: uppercase;
         }
         p.date {
@@ -59,6 +60,7 @@ main {
                 font-size: $prayerTimeFS !important;
                 display: inline-block;
                 padding: $prayerTimePad;
+                border-radius: 1rem;
             }
         }
     }
