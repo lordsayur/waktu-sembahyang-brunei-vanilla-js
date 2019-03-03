@@ -25,11 +25,11 @@ main {
         height: 100%;
         h1{
             font-size: 2rem;
-            padding: 0;
+            padding: 1rem auto;
             margin: .5rem auto;
             color: white;
-            width: 8rem;
-            border-radius: 2rem;
+            width: 9rem;
+            border-radius: .5rem;
             text-transform: uppercase;
         }
         p.date {
@@ -67,7 +67,7 @@ main {
                 font-size: $prayerTimeFS !important;
                 display: inline-block;
                 padding: $prayerTimePad;
-                border-radius: 1rem;
+                border-radius: .5rem;
             }
         }
     }

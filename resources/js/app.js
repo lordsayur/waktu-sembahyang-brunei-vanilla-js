@@ -123,7 +123,7 @@ $(document).ready(function () {
 
     function highlight() {
         let currentTime = date.getHours() + date.getMinutes() / 100;
-        let activeClass = "active pulse green accent-4 white-text";
+        let activeClass = "active green";
 
         if (parseFloat(subuh) > currentTime) {
             $('#isya').addClass(activeClass);
@@ -136,13 +136,13 @@ $(document).ready(function () {
             console.log("Subuh!!!");
         }
         else if (parseFloat(zuhur) > currentTime) {
-            $('#zuhur').addClass("active pulse orange white-text");
+            $('#zuhur').addClass("active yellow darken-1");
             $('#subuh').removeClass(activeClass);
             console.log("Kn Zuhur!!!");
         }
         else if (parseFloat(asar) + 12.0 > currentTime) {
             $('#zuhur').addClass(activeClass);
-            $('#zuhur').removeClass("orange");
+            $('#zuhur').removeClass("yellow darken-1");
             // $('#zuhur').closest("li").addClass("active");
             console.log("Zuhur!!!");
         }
