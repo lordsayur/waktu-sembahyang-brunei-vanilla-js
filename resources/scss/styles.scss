@@ -1,3 +1,7 @@
+$prayerTimeMar: 0.3rem;
+$prayerTimePad: 0.3rem;
+$prayerTimeFS: 1.3rem;
+
 html, body {
     height: 100%;
     width: 100%;
@@ -21,7 +25,7 @@ main {
             text-transform: uppercase;
         }
         p.date {
-            color: black;
+            color: white;
             text-align: center;
             margin: .5rem auto;
             padding: 0;
@@ -29,83 +33,33 @@ main {
             font-size: 1rem;
             font-weight: normal;
         }
-        .waktu-solat {
-            table {
-                margin: 0 auto;
-                padding: 0;
-                width: auto;
+        .waktu{
+            text-align: right;
+            position: relative;
+            &::after{
+                content: ":";
+                position: absolute;
+                right: 0;
+                top: .7rem;
+                font-size: $prayerTimeFS;
             }
-            tr {
-                border: none;
-            }
-            td {
-                color: black;
-                font-weight: 600;
-                font-size: 1.3rem;
-                margin: .5rem auto;
-                padding-top: 0;
-                padding-bottom: 0;
-                &.center {
-                    width: 2rem;
-                }
-                &:nth-of-type(1) {
-                    text-align: right;
-                }
-                &:nth-of-type(2) {
-                    width: 2rem;
-                    text-align: center;
-                }
-                &:nth-of-type(3) {
-                    text-align: left;
-                }
-            }
-        }
-        .table{ 
-            display: table; 
-            width: 100%;
-            margin: 0 auto;
-            padding: 0;
-            border: none !important;
-            box-shadow: none;
-            
-        }
-        .tr{ 
-            display: table-row;
-            .collapsible-header, .collapsible-body {
-                border: none;
-                padding: 0;
-                margin: .5rem 0;
-            }
-        }
-        .td{ 
-            display: table-cell;
-            margin: 0 auto;
-            padding: 0 1rem;
             p {
-                margin: 0 auto;
-                color: black;
-                font-size: 1.3rem !important;
-                &.test {
-                    margin-left: 0;
-                    padding-left: .5rem;
-                    width: 7rem;
-                }
-            }
-            &:nth-of-type(1) {
-                text-align: right;
-                width: 46.5%;
-            }
-            &:nth-of-type(2) {
-                width: 1%;
-                text-align: center;
-            }
-            &:nth-of-type(3) {
-                width: 46.5%;
-                text-align: left;
+                margin: $prayerTimeMar;
+                text-transform: uppercase;
+                font-size: $prayerTimeFS !important;
+                padding: $prayerTimePad;
+                border-radius: 2rem;
             }
         }
-        .content {
-            color: grey;
+        .masa{
+            text-align: left;
+            p{
+                margin: $prayerTimeMar;
+                text-transform: uppercase;
+                font-size: $prayerTimeFS !important;
+                display: inline-block;
+                padding: $prayerTimePad;
+            }
         }
     }
     
@@ -113,15 +67,6 @@ main {
         section.content {
             .carousel {
                 div.waktu-solat {
-                    p {
-                        font-size: .8rem;
-                        line-height: .9rem;
-                    }
-                    button {
-                        font-size: 1.2rem;
-                        line-height: 1.2rem;
-                        height: 2.5rem;
-                    }
                 }
             }
         }

@@ -1,5 +1,6 @@
 var waktu =
   [
+    // January
     [
       {
         "Date": "1/1/2019",
@@ -374,6 +375,7 @@ var waktu =
         "Isya": "07.43"
       }
     ],
+    // February
     [
       {
         "Date": "1/2/2019",
@@ -712,6 +714,7 @@ var waktu =
         "Isya": "07.43"
       }
     ],
+    // March
     [
       {
         "Date": "1/3/2019",
@@ -1085,5 +1088,370 @@ var waktu =
         "Maghrib": "06.29",
         "Isya": "07.39"
       }
-    ]
+    ],
+    // April
+    [
+      {
+        "Date": "1/4/2019",
+        "Tarikh": "25 Rejab 1440",
+        "Imsak": "04.52",
+        "Subuh": "05.02",
+        "Syuruk": "06.20",
+        "Duha": "06.42",
+        "Zuhur": "12.25",
+        "Asar": "03.26",
+        "Maghrib": "06.29",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "2/4/2019",
+        "Tarikh": "26 Rejab 1440",
+        "Imsak": "04.52",
+        "Subuh": "05.02",
+        "Syuruk": "06.19",
+        "Duha": "06.41",
+        "Zuhur": "12.25",
+        "Asar": "03.25",
+        "Maghrib": "06.29",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "3/4/2019",
+        "Tarikh": "27 Rejab 1440",
+        "Imsak": "04.51",
+        "Subuh": "05.01",
+        "Syuruk": "06.19",
+        "Duha": "06.41",
+        "Zuhur": "12.25",
+        "Asar": "03.25",
+        "Maghrib": "06.29",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "4/4/2019",
+        "Tarikh": "28 Rejab 1440",
+        "Imsak": "04.51",
+        "Subuh": "05.01",
+        "Syuruk": "06.18",
+        "Duha": "06.41",
+        "Zuhur": "12.25",
+        "Asar": "03.25",
+        "Maghrib": "06.29",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "5/4/2019",
+        "Tarikh": "29 Rejab 1440",
+        "Imsak": "04.50",
+        "Subuh": "05.00",
+        "Syuruk": "06.18",
+        "Duha": "06.40",
+        "Zuhur": "12.24",
+        "Asar": "03.26",
+        "Maghrib": "06.29",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "6/4/2019",
+        "Tarikh": "30 Rejab 1440",
+        "Imsak": "04.50",
+        "Subuh": "05.00",
+        "Syuruk": "06.17",
+        "Duha": "06.40",
+        "Zuhur": "12.24",
+        "Asar": "03.26",
+        "Maghrib": "06.28",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "7/4/2019",
+        "Tarikh": "1 Sya'ban 1440",
+        "Imsak": "04.49",
+        "Subuh": "04.59",
+        "Syuruk": "06.17",
+        "Duha": "06.39",
+        "Zuhur": "12.24",
+        "Asar": "03.27",
+        "Maghrib": "06.28",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "8/4/2019",
+        "Tarikh": "2 Sya'ban 1440",
+        "Imsak": "04.49",
+        "Subuh": "04.59",
+        "Syuruk": "06.17",
+        "Duha": "06.39",
+        "Zuhur": "12.23",
+        "Asar": "03.27",
+        "Maghrib": "06.28",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "9/4/2019",
+        "Tarikh": "3 Sya'ban 1440",
+        "Imsak": "04.48",
+        "Subuh": "04.58",
+        "Syuruk": "06.16",
+        "Duha": "06.39",
+        "Zuhur": "12.23",
+        "Asar": "03.28",
+        "Maghrib": "06.28",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "10/4/2019",
+        "Tarikh": "4 Sya'ban 1440",
+        "Imsak": "04.48",
+        "Subuh": "04.58",
+        "Syuruk": "06.16",
+        "Duha": "06.38",
+        "Zuhur": "12.23",
+        "Asar": "03.28",
+        "Maghrib": "06.28",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "11/4/2019",
+        "Tarikh": "5 Sya'ban 1440",
+        "Imsak": "04.47",
+        "Subuh": "04.57",
+        "Syuruk": "06.15",
+        "Duha": "06.38",
+        "Zuhur": "12.23",
+        "Asar": "03.29",
+        "Maghrib": "06.28",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "12/4/2019",
+        "Tarikh": "6 Sya'ban 1440",
+        "Imsak": "04.47",
+        "Subuh": "04.57",
+        "Syuruk": "06.15",
+        "Duha": "06.37",
+        "Zuhur": "12.22",
+        "Asar": "03.29",
+        "Maghrib": "06.28",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "13/4/2019",
+        "Tarikh": "7 Sya'ban 1440",
+        "Imsak": "04.46",
+        "Subuh": "04.56",
+        "Syuruk": "06.15",
+        "Duha": "06.37",
+        "Zuhur": "12.22",
+        "Asar": "03.29",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "14/4/2019",
+        "Tarikh": "8 Sya'ban 1440",
+        "Imsak": "04.46",
+        "Subuh": "04.56",
+        "Syuruk": "06.14",
+        "Duha": "06.37",
+        "Zuhur": "12.22",
+        "Asar": "03.30",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "15/4/2019",
+        "Tarikh": "9 Sya'ban 1440",
+        "Imsak": "04.45",
+        "Subuh": "04.55",
+        "Syuruk": "06.14",
+        "Duha": "06.36",
+        "Zuhur": "12.22",
+        "Asar": "03.30",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "16/4/2019",
+        "Tarikh": "10 Sya'ban 1440",
+        "Imsak": "04.45",
+        "Subuh": "04.55",
+        "Syuruk": "06.13",
+        "Duha": "06.36",
+        "Zuhur": "12.21",
+        "Asar": "03.31",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "17/4/2019",
+        "Tarikh": "11 Sya'ban 1440",
+        "Imsak": "04.45",
+        "Subuh": "04.55",
+        "Syuruk": "06.13",
+        "Duha": "06.36",
+        "Zuhur": "12.21",
+        "Asar": "03.31",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "18/4/2019",
+        "Tarikh": "12 Sya'ban 1440",
+        "Imsak": "04.44",
+        "Subuh": "04.54",
+        "Syuruk": "06.13",
+        "Duha": "06.35",
+        "Zuhur": "12.21",
+        "Asar": "03.31",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "19/4/2019",
+        "Tarikh": "13 Sya'ban 1440",
+        "Imsak": "04.44",
+        "Subuh": "04.54",
+        "Syuruk": "06.12",
+        "Duha": "06.35",
+        "Zuhur": "12.21",
+        "Asar": "03.32",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "20/4/2019",
+        "Tarikh": "14 Sya'ban 1440",
+        "Imsak": "04.43",
+        "Subuh": "04.53",
+        "Syuruk": "06.12",
+        "Duha": "06.35",
+        "Zuhur": "12.20",
+        "Asar": "03.32",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "21/4/2019",
+        "Tarikh": "15 Sya'ban 1440",
+        "Imsak": "04.43",
+        "Subuh": "04.53",
+        "Syuruk": "06.12",
+        "Duha": "06.34",
+        "Zuhur": "12.20",
+        "Asar": "03.32",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "22/4/2019",
+        "Tarikh": "16 Sya'ban 1440",
+        "Imsak": "04.42",
+        "Subuh": "04.52",
+        "Syuruk": "06.11",
+        "Duha": "06.34",
+        "Zuhur": "12.20",
+        "Asar": "03.33",
+        "Maghrib": "06.27",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "23/4/2019",
+        "Tarikh": "17 Sya'ban 1440",
+        "Imsak": "04.42",
+        "Subuh": "04.52",
+        "Syuruk": "06.11",
+        "Duha": "06.34",
+        "Zuhur": "12.20",
+        "Asar": "03.33",
+        "Maghrib": "06.26",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "24/4/2019",
+        "Tarikh": "18 Sya'ban 1440",
+        "Imsak": "04.41",
+        "Subuh": "04.51",
+        "Syuruk": "06.11",
+        "Duha": "06.33",
+        "Zuhur": "12.20",
+        "Asar": "03.33",
+        "Maghrib": "06.26",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "25/4/2019",
+        "Tarikh": "19 Sya'ban 1440",
+        "Imsak": "04.41",
+        "Subuh": "04.51",
+        "Syuruk": "06.10",
+        "Duha": "06.33",
+        "Zuhur": "12.19",
+        "Asar": "03.34",
+        "Maghrib": "06.26",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "26/4/2019",
+        "Tarikh": "20 Sya'ban 1440",
+        "Imsak": "04.41",
+        "Subuh": "04.51",
+        "Syuruk": "06.10",
+        "Duha": "06.33",
+        "Zuhur": "12.19",
+        "Asar": "03.34",
+        "Maghrib": "06.26",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "27/4/2019",
+        "Tarikh": "21 Sya'ban 1440",
+        "Imsak": "04.40",
+        "Subuh": "04.50",
+        "Syuruk": "06.10",
+        "Duha": "06.33",
+        "Zuhur": "12.19",
+        "Asar": "03.34",
+        "Maghrib": "06.26",
+        "Isya": "07.37"
+      },
+      {
+        "Date": "28/4/2019",
+        "Tarikh": "22 Sya'ban 1440",
+        "Imsak": "04.40",
+        "Subuh": "04.50",
+        "Syuruk": "06.10",
+        "Duha": "06.32",
+        "Zuhur": "12.19",
+        "Asar": "03.34",
+        "Maghrib": "06.26",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "29/4/2019",
+        "Tarikh": "23 Sya'ban 1440",
+        "Imsak": "04.39",
+        "Subuh": "04.49",
+        "Syuruk": "06.09",
+        "Duha": "06.32",
+        "Zuhur": "12.19",
+        "Asar": "03.35",
+        "Maghrib": "06.26",
+        "Isya": "07.38"
+      },
+      {
+        "Date": "30/4/2019",
+        "Tarikh": "24 Sya'ban 1440",
+        "Imsak": "04.39",
+        "Subuh": "04.49",
+        "Syuruk": "06.09",
+        "Duha": "06.32",
+        "Zuhur": "12.19",
+        "Asar": "03.35",
+        "Maghrib": "06.26",
+        "Isya": "07.38"
+      }
+     ],
+     // May
+     []
   ]
