@@ -2,6 +2,9 @@ csv to json
 http://www.convertcsv.com/csv-to-json.htm
 Tick : Force Wrap numeric values in double quotes
 
+background texture
+https://www.heropatterns.com/
+
 Date	Tarikh	Imsak	Subuh	Syuruk	Duha	Zuhur	Asar	Maghrib	Isya
 1/4/2019	25 Rejab 1440	04.52	05.02	06.20	06.42	12.25	03.26	06.29	07.38
 2/4/2019	26 Rejab 1440	04.52	05.02	06.19	06.41	12.25	03.25	06.29	07.38
