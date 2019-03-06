@@ -119,49 +119,51 @@ $(document).ready(function () {
     $('#maghrib2').text(maghrib2 + " pm");
     $('#isya2').text(isya2 + " pm");
 
+    $('#version').text("Lord Sayur v1.3.6");
+
     // $('.collapsible').collapsible();
 
     function highlight() {
-        let currentTime = date.getHours() + date.getMinutes() / 100;
+        let currentTime = new Date().getHours() + new Date().getMinutes() / 100;
         let activeClass = "active green";
 
         if (parseFloat(subuh) > currentTime) {
             $('#isya').addClass(activeClass);
             $('#maghrib').removeClass(activeClass);
-            console.log("Isya!!!");
+            // console.log("Isya!!!");
         }
         else if (parseFloat(syuruk) > currentTime) {
             $('#subuh').addClass(activeClass);
             $('#isya').removeClass(activeClass);
-            console.log("Subuh!!!");
+            // console.log("Subuh!!!");
         }
         else if (parseFloat(zuhur) > currentTime) {
             $('#zuhur').addClass("active yellow darken-1");
             $('#subuh').removeClass(activeClass);
-            console.log("Kn Zuhur!!!");
+            // console.log("Kn Zuhur!!!");
         }
         else if (parseFloat(asar) + 12.0 > currentTime) {
             $('#zuhur').addClass(activeClass);
             $('#zuhur').removeClass("yellow darken-1");
             // $('#zuhur').closest("li").addClass("active");
-            console.log("Zuhur!!!");
+            // console.log("Zuhur!!!");
         }
         else if (parseFloat(maghrib) + 12.0 > currentTime) {
             $('#asar').addClass(activeClass);
             $('#zuhur').removeClass(activeClass);
-            console.log("Asar!!!");
+            // console.log("Asar!!!");
         }
         else if (parseFloat(isya) + 12.0 > currentTime) {
             $('#maghrib').addClass(activeClass);
             $('#asar').removeClass(activeClass);
             $('#date-h').text(date1_h);
-            console.log("Maghrib!!!");
+            // console.log("Maghrib!!!");
         }
         else if (12.0 + 12.0 > currentTime) {
             $('#isya').addClass(activeClass);
-            $('#date1-h').text(date1_h);
             $('#maghrib').removeClass(activeClass);
-            console.log("Isya!!!");
+            $('#date-h').text(date1_h);
+            // console.log("Isya!!!");
         }
         else
         {

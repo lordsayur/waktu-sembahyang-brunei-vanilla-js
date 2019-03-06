@@ -72,10 +72,11 @@ main {
         }
     }
     
-    @media only screen and (max-width: 320px) {
-        section.content {
+    @media only screen and (min-width: 600px) {
+        main {
             .carousel {
-                div.waktu-solat {
+                div.carousel-item.white-text.section{
+                    padding-top: 10rem !important;
                 }
             }
         }
