@@ -154,10 +154,12 @@ $(document).ready(function () {
         else if (parseFloat(isya) + 12.0 > currentTime) {
             $('#maghrib').addClass(activeClass);
             $('#asar').removeClass(activeClass);
+            $('#date-h').text(date1_h);
             console.log("Maghrib!!!");
         }
         else if (12.0 + 12.0 > currentTime) {
             $('#isya').addClass(activeClass);
+            $('#date1-h').text(date1_h);
             $('#maghrib').removeClass(activeClass);
             console.log("Isya!!!");
         }
